@@ -1,0 +1,110 @@
+@media screen and (max-width: 991.98px)
+{
+    .toggle_icon
+    {
+        display: block;
+    }
+    .mob_main_menu
+    {
+        display: block;
+        position: absolute;
+        top: 100%;
+        background-color: white;
+        width: 100%;
+        left: 0;
+        padding: 15px 45px;
+        box-shadow: 0px 5px 15px rgba(128, 128, 128, .3);
+    }
+    .mob_sub_menu
+    {
+        padding-left: 40px;
+    }
+    .mob_main_menu li a
+    {
+        display: block;
+        padding: 5px;
+    }
+    
+    .mob_main_menu li a {
+       font-size: 12px !important;
+    }
+
+   
+    .text_content {
+        padding: 130px 0; 
+    }
+    .text_content a{
+        font-size: 20px !important;
+    }
+    .text_content h1 {
+        font-size: 30px;
+    }
+    .text_content p {
+        font-size: 14px !important;
+        margin-top: 10px !important;
+    }
+    .text_content .btn-book {
+        margin-top: 0px !important;
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .account , .toggle_icon{
+        margin: 0 !important;
+    }
+    .mob_main_menu .mob_sub_menu {
+        padding-left: 20px;
+    }
+    .mob_main_menu .mob_sub_menu li {
+        padding: 10px 15px;
+    }
+    .event-schedule .card-body .content .subscribe-form .subscribe-btn.join {
+        width: inherit;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .spacer {
+        padding: 60px 0;
+    }
+    .text_content {
+        padding: 20px 0; 
+    }
+    .text_content a{
+        font-size: 10px !important;
+    }
+    .text_content h1 {
+        font-size: 20px;
+    }
+    .text_content p {
+        font-size: 14px !important;
+        margin-top: 10px !important;
+    }
+    .text_content .btn-book {
+        margin-top: 0px !important;
+        padding: 0 !important;
+    }
+    .customers::before {
+        display: none;
+    }
+    .main-blog-card {
+        padding: 30px !important;
+        margin-top: 5px !important;
+    }
+    .mt-100 {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (width: 344px) {
+    .row>* {
+        padding-right: 0;
+    }
+}
+
+@media screen and (width: 540px) {
+    .text_content {
+        padding: 70px 0; 
+    }
+}

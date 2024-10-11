@@ -1,0 +1,1009 @@
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ------------------------------------ Default css start ----------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --theme: #396cf0;
+  --dark: #1c1c1c;
+  --white: #fff;
+  --Inter: "Inter";
+}
+
+body {
+  color: #36414c;
+  font-family: var(--Inter);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--Inter);
+  color: var(--dark);
+  font-weight: 800;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.spacer {
+  padding: 130px 0;
+}
+
+.spacer2 {
+  padding: 200px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="button"] {
+  width: 100%;
+  padding: 7px;
+  margin: 8px 0;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: var(--theme);
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="checkbox"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.para-desc {
+  max-width: 600px;
+  color: #8492a6 !important;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.btn-Seemore {
+  box-shadow: 0 3px 7px rgba(57, 108, 240, 0.5);
+}
+
+.btn-darkmore {
+  box-shadow: 0 3px 7px rgba(97, 98, 100, 0.5);
+}
+
+::selection {
+  background-color: rgba(43, 52, 61, 0.6);
+}
+
+/* ----------------------------------------- header section start --------------------------------------------- */
+
+#home {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.bottom_header {
+  background-color: var(--white);
+  box-shadow: 0px 5px 20px rgba(128, 128, 128, 0.5);
+  color: var(--white);
+  padding: 0px 25px;
+}
+
+.bottom_header ul li {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+
+.bottom_header ul li:hover > a {
+  color: var(--theme);
+}
+
+.main_menu li {
+  position: relative;
+}
+
+.main_menu .sub_menu {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.3);
+  border-radius: 10px;
+  width: 170px;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease-in-out;
+}
+
+.main_menu .sub_menu li {
+  padding: 13px 25px;
+  color: var(--dark);
+  transition: 0.3s ease-in-out;
+}
+
+.main_menu .sub_menu li:hover {
+  color: var(--theme);
+  background-color: rgba(128, 128, 128, 0.1);
+  cursor: pointer;
+}
+
+.main_menu li:hover .sub_menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.toggle_icon {
+  border: 2px solid black;
+  padding: 7px 10px;
+  border-radius: 8px;
+  display: none;
+  cursor: pointer;
+}
+
+.toggle_icon i {
+  color: black;
+}
+
+.mob_main_menu {
+  display: none;
+}
+
+.mob_main_menu li a {
+  font-size: 14px;
+}
+
+.btn-bg {
+  background-color: #007bff;
+  color: var(--white);
+  width: 100%;
+  margin: 8px 0;
+}
+
+/* ----------------------------------------- header section end --------------------------------------------- */
+
+/* ----------------------------------------- slider section start ------------------------------------------- */
+
+.bg-overlay {
+  background-color: rgba(54, 65, 76, 0.6);
+  background-image: url(../assets/asset\ 19.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ----------------------------------------- slider section end ---------------------------------------------- */
+
+/* --------------------------------------- Services section start --------------------------------------------- */
+
+.section-title .title {
+  letter-spacing: 0.5px;
+  font-size: 28px !important;
+}
+
+.card p {
+  color: #8492a6;
+}
+
+.office {
+  margin-top: 100px;
+}
+
+.work-container {
+  border-radius: 10px;
+}
+
+.work-container .work-content {
+  bottom: 20px;
+  left: 20px;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.work-container .card-body img {
+  transition: 0.5s ease-in-out;
+}
+
+.work-container .card-body .office-img-layer {
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.work-container:hover .card-body img {
+  transform: rotate(5deg) scale(1.1);
+}
+
+.work-container:hover .card-body .office-img-layer {
+  opacity: 0.45;
+}
+
+.work-container:hover .work-content {
+  opacity: 1;
+}
+
+/* --------------------------------------- Services section end --------------------------------------------- */
+
+/* --------------------------------------- Solutions section start --------------------------------------------- */
+
+.solutions .title .solutions-title {
+  letter-spacing: 0.5px;
+  font-size: 28px !important;
+}
+
+.sticky-sidebar {
+  position: sticky;
+  top: 90px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: var(--bs-nav-pills-link-active-color) !important;
+  background-color: var(--bs-nav-pills-link-active-bg);
+}
+
+.nav .nav-link {
+  width: 100%;
+  display: block;
+  padding: 15px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(120, 119, 119);
+}
+
+.solutions-p {
+  color: #8492a6;
+}
+
+.play-icon {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.play-icon .play-btn {
+  height: 78px;
+  width: 78px;
+  font-size: 20px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  margin: auto;
+  background-color: white;
+}
+
+.customers::before {
+  content: "";
+  width: 100%;
+  height: 45%;
+  background-color: rgb(248, 249, 250);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* --------------------------------------- Solutions section end --------------------------------------------- */
+
+/* ------------------------------------ testimonial-slider section start ------------------------------------ */
+
+.testimonials-container .testimonial-card {
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  /* opacity: 0.3; */
+}
+
+.testimonial-card .test-card-body {
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  border: 1px solid rgb(237, 237, 237);
+}
+
+.test-card-body .ratings i {
+  font-size: 12px;
+  color: rgb(249, 166, 65);
+}
+
+.test-card-body p {
+  color: #8492a6;
+}
+
+.testimonial-card .test-card-body::before {
+  content: "";
+  position: absolute;
+  bottom: -26px;
+  left: 22px;
+  margin-left: -5px;
+  border-width: 13px;
+  border-style: solid;
+  border-color: whitesmoke transparent transparent transparent;
+}
+
+.testimonial-card .profile {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.profile .profile-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.profile .profile-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile .profile-desc .post {
+  color: #8492a6;
+  font-size: 14px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: none;
+  border: 1px solid var(--theme);
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: var(--theme);
+}
+
+#testimonials:hover {
+  cursor: e-resize;
+}
+
+.blog-card {
+  box-shadow: 0 0 3px rgba(54, 65, 76, 0.2);
+  transition: 0.5s ease-in-out;
+}
+
+.blog-card .blog-tag {
+  bottom: -30px;
+  left: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.blog-card .blog-tag a {
+  color: #8492a6;
+  font-size: 14px;
+}
+
+.blog-card:hover .blog-tag {
+  bottom: 10px;
+}
+
+.blog-card:hover {
+  box-shadow: 0 0px 25px rgba(54, 65, 76, 0.2) !important;
+}
+
+.blog-card .blog-content .blog-link {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+.blog-card .blog-content .blog-link:hover {
+  color: var(--theme) !important;
+}
+
+.blog-card .blog-content p {
+  color: #8492a6;
+}
+
+.blog-card .blog-content .readmore:hover {
+  color: var(--theme) !important;
+}
+
+/* ------------------------------------ testimonial-slider section end -------------------------------------- */
+
+/* ------------------------------------ footer section start -------------------------------------- */
+
+.bg-footer {
+  background-color: #35404e;
+}
+
+footer .footer-logo .logo-img {
+  width: 110px;
+  display: block;
+  object-fit: cover;
+}
+
+footer .text-foot {
+  color: #adb9c7;
+}
+
+.footer-social-icon li a {
+  border: 1px solid #55606b;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  line-height: 29px;
+  transition: 0.3s ease-in-out;
+}
+
+.footer-social-icon li a i {
+  font-size: 14px;
+}
+
+.footer-social-icon li a:hover {
+  background-color: var(--theme);
+}
+
+footer .text-foot {
+  color: #adb9c7;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+footer .text-foot:hover {
+  color: var(--white);
+}
+
+footer .text-foot i {
+  font-size: 13px;
+}
+
+footer .footer-py-30 {
+  padding: 30px 0;
+  border-top: 1px solid #3b4757;
+}
+
+footer .team-cond {
+  color: #adb9c7;
+}
+
+/* ------------------------------------ footer section end -------------------------------------- */
+
+/* about us page css start */
+
+/* --------------------------------------- about-us section start -------------------------------- */
+
+.bg-half {
+  padding: 184px 0;
+  background: url(../assets/aboutus/about-page-img.jpg) center, center;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-half .py-160 {
+  padding: 160px 0;
+}
+
+.breadcrumb-position {
+  position: relative;
+  top: 148px;
+}
+
+.breadcrumb-position .breadcrumb {
+  letter-spacing: 0.5px;
+  padding: 8px 24px;
+}
+
+.breadcrumb-position .breadcrumb .breadcrumb-item.active {
+  color: var(--theme);
+}
+
+.about-company-icon {
+  width: 90px;
+  display: block;
+  object-fit: cover;
+}
+
+.feature .services-icon {
+  height: 80px;
+  width: 150px;
+  background: linear-gradient(45deg, transparent, rgba(57, 108, 240, 0.1));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature .services-content h5 {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+
+.feature .services-content p {
+  color: #adb9c7;
+}
+
+.subscribe {
+  background: url(../assets/aboutus/subscribe.png) center center;
+}
+
+.subscribe p {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.subscribe-form .subscribe-btn {
+  position: absolute;
+  top: 11.5px;
+  right: 5px;
+  width: 150px;
+  padding: 12px;
+  border-radius: 50px;
+  outline: none !important;
+}
+
+/* --------------------------------------- about-us section end -------------------------------- */
+
+/* about us page css start */
+
+/* Pricing page css start */
+
+/* --------------------------------------- accordion section start -------------------------------- */
+
+.accordion-item {
+  border-radius: 10px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #052c65 !important;
+  background-color: #f1f1f2;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/* --------------------------------------- accordion section end -------------------------------- */
+
+/* Pricing page css end */
+
+/* Benefits page css start */
+
+/* --------------------------------------- Benefits-designed section start ----------------------------- */
+
+.Benefits-designed p {
+  color: #8492a6;
+}
+
+.Benefits-designed ul li {
+  color: #8492a6;
+}
+
+.Benefits-designed ul li i {
+  color: #38c976;
+}
+
+.Benefits-designed a i {
+  font-size: 14px;
+}
+
+/* --------------------------------------- Benefits-designed section end ----------------------------- */
+
+/* Benefits page css end */
+
+/* team page css start */
+
+/* --------------------------------------- team-designed section start ----------------------------- */
+
+.video-btn {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background-color: var(--theme);
+  font-size: 12px;
+  text-align: center;
+  line-height: 37px;
+  color: var(--white);
+}
+
+.video-text {
+  font-size: 15px;
+}
+
+/* --------------------------------------- team-designed section end ----------------------------- */
+
+/* team page css end */
+
+/* terms page css start */
+
+/* --------------------------------------- terms-designed section start ----------------------------- */
+
+.terms-p {
+  color: #8492a6;
+  line-height: 1.7;
+}
+
+.pagination .page-item .page-link {
+  color: #36414c;
+  border: 1px solid #d5dde5;
+  padding: 12px 18px;
+  font-size: 14px;
+}
+
+.pagination .page-item:first-child .page-link {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.pagination .page-item:last-child .page-link {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.pagination .page-item:hover a {
+  background-color: var(--theme);
+  color: var(--white);
+}
+
+.pagination .page-item a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.back-to-home {
+  top: 0px;
+  right: 0px;
+}
+
+.back-to-home a {
+  padding: 15px;
+}
+
+/* --------------------------------------- terms-designed section end ----------------------------- */
+
+/* terms page css end */
+
+/* spaces page css start */
+
+/* --------------------------------------- spaces-designed section start ----------------------------- */
+
+.registration-form .custom-select {
+  width: 100%;
+}
+
+.registration-form .custom-select select {
+  appearance: none;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.675em 6em 0.675em 1em;
+  background-color: rgba(0, 123, 255, 0.05);
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  cursor: pointer;
+}
+
+.registration-form .office-icon,
+.registration-form .location-icon {
+  position: absolute;
+  top: 12px;
+  right: 30px;
+}
+
+.registration-form .custom-date .date {
+  padding: 0.675em 1em;
+  background-color: rgba(0, 123, 255, 0.05);
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  cursor: pointer;
+}
+
+.registration-form .Search {
+  padding: 10px 0;
+}
+
+.blog-card .blog-content .rating .star {
+  font-size: 11px;
+}
+
+.blog-card .blog-content .rating .star i {
+  color: orange;
+}
+
+.blog-card .blog-content .readmore.spaces {
+  font-size: 15px;
+}
+
+/* --------------------------------------- spaces-designed section end ----------------------------- */
+
+/* spaces page css end */
+
+/* events page css start */
+
+/* --------------------------------------- events-designed section start ----------------------------- */
+
+.widget input[type="text"] {
+  box-shadow: none;
+  padding: 12px 15px;
+  height: 45px;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  outline: none !important;
+  padding-right: 45px;
+}
+
+.widget input[type="submit"] {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  opacity: 0;
+  width: 35px;
+  height: 35px;
+}
+
+.widget .searchform::after {
+  content: "\f002";
+  position: absolute;
+  right: 18px;
+  top: 12px;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "FontAwesome";
+  pointer-events: none;
+}
+
+.widget a:hover {
+  color: var(--theme);
+}
+
+.widget .h-70 {
+  height: 75px;
+  width: auto;
+  border-radius: 6px;
+}
+
+.widget .tagcloud a {
+  background: #f9fcff;
+  color: #36414c;
+  display: inline-block;
+  font-size: 9px;
+  letter-spacing: 1px;
+  margin: 5px 10px 5px 0;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+
+.widget .tagcloud a:hover {
+  background-color: var(--theme);
+  color: var(--white);
+}
+
+.widget .footer-social-icon a:hover .widget-icon {
+  color: var(--white) !important;
+  transition: all 0.3s ease;
+}
+
+/* --------------------------------------- events-designed section end ----------------------------- */
+
+/* events page css end */
+
+/* events-list page css start */
+
+/* --------------------------------------- events-designed section start ----------------------------- */
+
+.searchform .Search-btn {
+  position: absolute;
+  right: 15px;
+  top: 11px;
+  padding: 13px 35px;
+}
+
+.event-schedule .day {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(57, 108, 240, 0.1);
+  line-height: 48px;
+  border: 3px solid white;
+}
+
+.event-schedule a:hover {
+  color: var(--theme) !important;
+}
+
+.event-schedule .subscribe-form .subscribe-btn.join {
+  background-color: rgba(57, 108, 240, 0.1);
+}
+
+.event-schedule .subscribe-form .subscribe-btn.join:hover {
+  background-color: var(--theme);
+  color: var(--white) !important;
+}
+
+/* --------------------------------------- events-designed section end ----------------------------- */
+
+/* events-list page css end */
+
+/* Contact page css start */
+
+textarea {
+  width: 100%;
+  padding: 7px;
+  margin: 8px 0;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  border-color: var(--theme);
+}
+
+/* Contact page css end */
+
+/* signin page css start */
+
+.signin {
+  background-image: url(../assets/signin.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.signin .bg-overlay-signin {
+  background-color: rgba(54, 65, 76, .7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.signin .signin-img {
+   width: 75px;
+   margin: auto;
+}
+
+/* signin page css end */
+
+
+
+
+
+/* page loader effect css start */
+
+.sticky_icon {
+  width: 45px;
+  height: 45px;
+  background-color: var(--theme);
+  box-shadow: 0 5px 10px #808080;
+  color: var(--white);
+  font-size: 18px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+}
+
+.page-loader {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  position: fixed;
+}
+
+/* From Uiverse.io by Nawsome */
+.loading {
+  width: 124px;
+  height: 124px;
+}
+
+.loading svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.circle {
+  transform: rotate(-90deg);
+  transform-origin: center;
+  stroke-dasharray: 380;
+  stroke-dashoffset: 380;
+  animation: circle_4 2s ease-in-out forwards;
+}
+
+.check {
+  stroke-dasharray: 45;
+  stroke-dashoffset: 45;
+  animation: check_4 0.2s 2s ease-in-out forwards;
+}
+
+@keyframes circle_4 {
+  0% {
+    stroke-dashoffset: 380;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes check_4 {
+  0% {
+    stroke-dashoffset: 45;
+  }
+
+  100% {
+    stroke-dashoffset: 90;
+  }
+}
+
+/* page loader effect css end */

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codash - Coworking Space Template</title>
+
+    <!-- favicon icon -->
+    <link rel="icon" href="assets/favicon.ico">
+
+    <!-- Font Aawsome css file -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- slider css file -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Boostrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- cutsom css file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- media css file -->
+    <link rel="stylesheet" href="css/media.css">
+
+
+</head>
+
+<body>
+
+    <!-- header section strat -->
+
+        <section id="home">
+            <header class="z-3 bottom_header position-relative"> <!---position-relative-->
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-auto">
+                            <ul class="p-0 m-0">
+                                <li>
+                                    <a href=""><img src="assets/logo2.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-auto d-flex m-1">
+                            <nav class="d-none d-lg-block">
+                                <ul class="m-0 p-0 d-flex main_menu align-items-center">
+                                    <li class="px-3 py-4 mx-2"><a href="index.html">HOME</a></li>
+                                    <li class="px-3 py-4 mx-2">
+                                        <a href="">PAGES <i class="fa-solid fa-angle-down mx-1"></i></a>
+                                        <ul class="sub_menu p-0">
+                                            <li><a href="Aboutus.html">About us</a></li>
+                                            <li><a href="Services.html">Services</a></li>
+                                            <li><a href="Pricing.html">Pricing</a></li>
+                                            <li><a href="Benefits.html">Benefits</a></li>
+                                            <li><a href="Team.html">Team</a></li>
+                                            <li><a href="Faq.html">FAQs</a></li>
+                                            <li><a href="Terms.html">Terms Policy</a></li>
+                                            <li><a href="Blog.html">Blog</a></li>
+                                            <li><a href="404.html">404</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="px-3 py-4 mx-2"><a href="Spaces.html">SPACES</a></li>
+                                    <li class="px-3 py-4 mx-2">
+                                        <a href="">EVENTS <i class="fa-solid fa-angle-down mx-1"></i></a>
+                                        <ul class="sub_menu p-0">
+                                            <li><a href="EventOverview.html">Overview</a></li>
+                                            <li><a href="Eventlist.html">Event list</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="px-3 py-4 mx-2"><a href="Contact.html">CONTACT</a></li>
+                                    <li class="px-3 py-3 mx-2">
+                                        <button type="button" class="btn" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">
+                                            <i class="fa-regular fa-user"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        
+                            <button type="button" class="btn d-lg-none d-md-inline-block px-3 me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <i class="fa-regular fa-user text-black"></i>
+                            </button>
+
+                            <div class="toggle_icon m-2">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+
+                            <ul class="mob_main_menu">
+                                <li class="py-2 text-black">
+                                    <a href="index.html">HOME</a>
+                                </li>
+                                <li class="py-2 text-black">
+                                    <a href="#">PAGES <i class="fa-solid fa-angle-down mx-1"></i></a>
+                                    <ul class="mob_sub_menu">
+                                        <li class="py-1"><a href="Aboutus.html">About us</a></li>
+                                        <li class="py-1"><a href="Services.html">Services</a></li>
+                                        <li class="py-1"><a href="Pricing.html">Pricing</a></li>
+                                        <li class="py-1"><a href="Benefits.html">Benefits</a></li>
+                                        <li class="py-1"><a href="Team.html">Team</a></li>
+                                        <li class="py-1"><a href="Faq.html">FAQs</a></li>
+                                        <li class="py-1"><a href="Terms.html">Terms Policy</a></li>
+                                        <li class="py-1"><a href="Blog.html">Blog</a></li>
+                                        <li class="py-1"><a href="404.html">404</a></li>
+                                    </ul>
+                                </li>
+                                <li class="py-2 text-black"><a href="Spaces.html">SPACES</a></li>
+                                <li class="py-2 text-black">
+                                    <a href="#">EVENTS <i class="fa-solid fa-angle-down mx-1"></i></a>
+                                    <ul class="mob_sub_menu">
+                                        <li class="py-1"><a href="EventOverview.html">Overview</a></li>
+                                        <li class="py-1"><a href="Eventlist.html">Event list</a></li>
+                                    </ul>
+                                </li>
+                                <li class="py-2 text-black"><a href="Contact.html">CONTACT</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="modal fade align-content-center" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Login Now</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" class="align-items-center">
+                                <div>
+                                    <label for="">Your Email <span class="text-danger">*</span> </label>
+                                    <input type="email" name="" id="" placeholder="Your Email :" required>
+                                </div>
+                                <div>
+                                    <label for="">Password <span class="text-danger">*</span> </label>
+                                    <input type="password" name="" id="" placeholder="Password :" required>
+                                </div>
+                                <div class="my-2">
+                                    <input type="checkbox" name="" id=""> Remember Me
+                                </div>
+                                <div>
+                                    <input type="submit" value="Create Account" class="btn-bg">
+                                </div>
+                                <div class="text-center my-2">
+                                    <span style="color: gray; font-size: 15px;">Already have an account ?
+                                         <a href="signin.html"style="font-size: 16px; font-weight: 600; color: black; margin: 0 5px;">Sign in</a>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    <!-- header section end -->
+
+    <!-- Benefits section start -->
+
+        <section class="bg-half w-100">
+            <div class="bg-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+                <div class="container py-160">
+                    <div class="row justify-content-center me-0">
+                        <div class="col-lg-12 text-center">
+                            <div class="about-heading">
+                                <h3 class="text-white">Our Benefits</h3>
+
+                                <div class="breadcrumb-position">
+                                <div class="d-inline-block">
+                                        <nav aria-label="breadcrumb">
+                                            <ol class="breadcrumb bg-white rounded shadow mb-0">
+                                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                            <li class="breadcrumb-item"><a href="#">Page</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Benefits</li>
+                                            </ol>
+                                        </nav>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Benefits section end -->
+
+    <!-- Benefits-designed section start -->
+
+        <section class="Solutions-designed spacer">
+
+            <div class="section-title text-center mb-4 pb-2">
+                <h6 class="text-primary fw-bold">Our Mission</h6>
+                <h4 class="title mb-4 mt-3">What We Believe</h4>
+                <p class="mb-0 para-desc mx-auto">Codash offer a wealth of advantages for self starters, including networking opportunities, daily structure, and increased productivity.</p>
+            </div>
+
+            <div class="container mt-5">
+                <div class="row align-items-center">
+                    <div class="col-md-5 col-12">
+                        <img src="assets/benefits/benefits-1.jpg" alt="" class="img-fluid rounded-3 shadow">
+                    </div>
+
+                    <div class="col-md-7 col-12 mt-4">
+                        <div class="section-title ms-lg-5 Benefits-designed">
+                            <h4 class="title mb-4 lh-base">Coworking with <br> Diligence, Focus & Peace</h4>
+
+                            <p class="mb-3">Codash offer a wealth of advantages for self starters, including networking opportunities, daily structure, and increased productivity. That’s exactly whatwe focus at Codash. Before coming up with a shared workspaces, we have done intense research on the kind of infrastructure,</p>
+
+                            <ul class="p-0">
+                                <li>
+                                    <i class="fa-regular fa-circle-check me-2"></i>Digital Marketing Solutions for Tomorrow
+                                </li>
+
+                                <li class="mt-2">
+                                    <i class="fa-regular fa-circle-check me-2"></i>Digital Marketing Solutions for Tomorrow
+                                </li>
+                                <li class="mt-2">
+                                    <i class="fa-regular fa-circle-check me-2"></i>Digital Marketing Solutions for Tomorrow
+                                </li>
+                            </ul>
+
+                            <a href="" class="text-primary mt-3">Find Out More<i class="fa-solid fa-angle-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-100">
+                <div class="row align-items-center">
+                    <div class="col-md-5 col-12 order-md-2">
+                        <img src="assets/benefits/benefits-2.jpg" alt="" class="img-fluid rounded-3 shadow">
+                    </div>
+
+                    <div class="col-md-7 col-12 mt-4 order-md-1">
+                        <div class="section-title ms-lg-5 Benefits-designed">
+                            <h4 class="title mb-4 lh-base">Breeding Collaboration <br> through Innovation</h4>
+
+                            <p class="mb-3">Codash offer a wealth of advantages for self starters, including networking opportunities, daily structure, and increased productivity. That’s exactly whatwe focus at Codash. Before coming up with a shared workspaces, we have done intense research on the kind of infrastructure,</p>
+
+                            <ul class="p-0">
+                                <li>
+                                    <i class="fa-regular fa-circle-check me-2"></i>Digital Marketing Solutions for Tomorrow
+                                </li>
+
+                                <li class="mt-2">
+                                    <i class="fa-regular fa-circle-check me-2"></i>Digital Marketing Solutions for Tomorrow
+                                </li>
+                                <li class="mt-2">
+                                    <i class="fa-regular fa-circle-check me-2"></i>Digital Marketing Solutions for Tomorrow
+                                </li>
+                            </ul>
+
+                            <a href="" class="text-primary mt-3">Find Out More<i class="fa-solid fa-angle-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-100">
+                <div class="row align-items-center">
+                    <div class="col-md-5 col-12">
+                        <img src="assets/benefits/benefits-3.jpg" alt="" class="img-fluid rounded-3 shadow">
+                    </div>
+
+                    <div class="col-md-7 col-12 mt-4">
+                        <div class="section-title ms-lg-5 Benefits-designed">
+                            <h4 class="title mb-4 lh-base">People to Feel <br> Focused and Comfortable</h4>
+
+                            <p class="mb-3">Codash offer a wealth of advantages for self starters, including networking opportunities, daily structure, and increased productivity. That’s exactly whatwe focus at Codash. Before coming up with a shared workspaces, we have done intense research on the kind of infrastructure,</p>
+
+                            <ul class="p-0">
+                                <li>
+                                    <i class="fa-regular fa-circle-check me-2"></i>Digital Marketing Solutions for Tomorrow
+                                </li>
+
+                                <li class="mt-2">
+                                    <i class="fa-regular fa-circle-check me-2"></i>Digital Marketing Solutions for Tomorrow
+                                </li>
+                                <li class="mt-2">
+                                    <i class="fa-regular fa-circle-check me-2"></i>Digital Marketing Solutions for Tomorrow
+                                </li>
+                            </ul>
+
+                            <a href="" class="text-primary mt-3">Find Out More<i class="fa-solid fa-angle-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-100">
+                <div class="subscribe py-5 px-4 bg-primary rounded-5">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="section-title text-center mb-4 pb-2">
+                                <h4 class="title mb-4 text-white">Subscribe our Newsletter</h4>
+                                <p class="mb-0 para-desc mx-auto">Codash offer a wealth of advantages for self starters, including networking opportunities, daily structure, and increased productivity.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8">
+                            <div class="subscribe-form mt-4 position-relative">
+                                <form action="">
+                                    <input type="email" name="email" id="" class="rounded-5 px-4 py-3 border-0 " placeholder="Your Email Id" required>
+                                    <button type="submit" class="btn btn-success subscribe-btn">Subscribe Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+    <!-- Benefits-designed section end -->
+
+
+    <!-- footer section start -->
+
+        <footer class="bg-footer spacer pb-0">
+            <div class="container">
+                <div class="row px-4">
+                    <div class="col-lg-5 col-12 mb-4">
+                        <div class="footer-logo">
+                            <a href=""><img src="assets/logo.png" alt="" class="logo-img"></a>
+                        </div>
+
+                        <p class="text-foot mt-4">Codash offer a wealth of advantages for self starters, including networking opportunities, daily structure, and increased productivity.</p>
+
+                        <ul class="mt-4 footer-social-icon p-0">
+                            <li class="d-inline-block">
+                                <a href="" class="rounded"><i class="fa-brands fa-facebook-f text-white"></i></a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a href="" class="rounded ms-2"><i class="fa-brands fa-instagram text-white"></i></a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a href="" class="rounded ms-2"><i class="fa-brands fa-twitter text-white"></i></a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a href="" class="rounded ms-2"><i class="fa-brands fa-linkedin-in text-white"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-lg-7 col-12">
+                        <div class="row">
+                            <div class="col-md-4 mb-2">
+                                <h5 class="text-light">Company</h5>
+                                <ul class="mt-4 p-0">
+                                    <li class="mb-2">
+                                        <a href="" class="text-foot">
+                                            <i class="fa-solid fa-angle-right me-2"></i> About Us
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="" class="text-foot">
+                                            <i class="fa-solid fa-angle-right me-2"></i> Services
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="" class="text-foot">
+                                            <i class="fa-solid fa-angle-right me-2"></i> Pricing
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="" class="text-foot">
+                                            <i class="fa-solid fa-angle-right me-2"></i> Project
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="" class="text-foot">
+                                            <i class="fa-solid fa-angle-right me-2"></i> Blog
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4 mb-2">
+                                <h5 class="text-light">Support</h5>
+                                <ul class="mt-4 p-0">
+                                    <li class="mb-2">
+                                        <a href="" class="text-foot">
+                                            <i class="fa-solid fa-angle-right me-2"></i> Help Desk
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="" class="text-foot">
+                                            <i class="fa-solid fa-angle-right me-2"></i> Live Chat
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="" class="text-foot">
+                                            <i class="fa-solid fa-angle-right me-2"></i> Knowledge
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="" class="text-foot">
+                                            <i class="fa-solid fa-angle-right me-2"></i> Messaging
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4 mb-2">
+                                <h5 class="text-light">Contacts</h5>
+                                <ul class="mt-4 p-0">
+                                    <li class="mb-2">
+                                        <a href="" class="text-foot">
+                                            <i class="fa-solid fa-location-dot me-2"></i> Londan, England
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="" class="text-foot">
+                                            <i class="fa-regular fa-envelope me-2"></i> test@domain.com
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="" class="text-foot">
+                                            <i class="fa-solid fa-phone me-2"></i> (+12) 1254-5487
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-py-30">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center">
+                            <p class="team-cond">2024 © Codash. Design with <i class="fa-solid fa-heart text-danger"></i> by <a href="" class="text-foot">Kd Patel</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- footer section end -->
+
+    <!-- scroll icon start-->
+
+    <div class="sticky_icon">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- scroll icon end-->
+
+    <!-- page loader start -->
+
+    <div class="page-loader">
+        <div class="loading">
+        <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 124 124">
+            <circle class="circle-loading" cx="62" cy="62" r="59" fill="none" stroke="rgba(0, 123, 255, .6)" stroke-width="6px"></circle>
+            <circle class="circle" cx="62" cy="62" r="59" fill="none" stroke="rgba(0, 123, 255, .9)" stroke-width="6px" stroke-linecap="round"></circle>
+            <polyline class="check" points="73.56 48.63 57.88 72.69 49.38 62" fill="none" stroke="rgba(0, 123, 255, .8)" stroke-width="6px" stroke-linecap="round"></polyline>
+        </svg>
+        </div>
+     </div>
+
+    <!-- page loader end -->
+
+
+
+    <!-- Boostrap js file -->
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <!-- jquery file  -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- slider js file -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- custom js file -->
+    <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
